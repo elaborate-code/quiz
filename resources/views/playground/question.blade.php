@@ -25,7 +25,7 @@
 
                 @foreach ($question->choices->shuffle() as $choice)
                     <div class="py-4 rounded-md shadow-sm flex items-center flex-row text-white text-xl">
-                        <input name="choice_number" type="radio" value="{{ $choice->choice_number }}"
+                        <input name="choice_number" type="radio" value="{{ $choice->encrypted_choice_number }}"
                             class="h-6 w-6 ml-2 " required />
 
                         <label dir="rtl" class="flex-1">

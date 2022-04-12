@@ -4,6 +4,7 @@ namespace App\Http\Requests;
 
 use App\Services\CurrentQuiz;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Crypt;
 use Illuminate\Validation\Rule;
 
 class RecordChoiceRequest extends FormRequest
@@ -12,6 +13,13 @@ class RecordChoiceRequest extends FormRequest
     public function authorize(): bool
     {
         return true;
+    }
+
+    public function prepareForValidation()
+    {
+        $this->merge([
+            'choice_number' => Crypt::decrypt($this->choice_number),
+        ]);
     }
 
     public function rules(): array
