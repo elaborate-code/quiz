@@ -1,6 +1,6 @@
 <x-app-layout class="h-fit">
 
-    <div class="p-6 ">
+    <div class="p-4">
 
         <img class="w-24 lg:w-52 absolute right-0 top-0"
             src="https://media.giphy.com/media/TRub2cQyyLihIu0Ufa/giphy.gif" />

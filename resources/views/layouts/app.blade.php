@@ -22,10 +22,9 @@
     <div class="min-h-screen bg-slate-600">
         <!-- Page Content -->
         <main>
-            <div class="lg:py-12 ">
-                <div class="max-w-7xl mx-auto lg:px-8">
-                    <div class="bg-slate-800 overflow-hidden shadow-sm sm:rounded-lg font-amiri lg:h-fit lg:pb-32"
-                        dir="rtl">
+            <div class="lg:py-6">
+                <div class="h-screen max-w-7xl mx-auto lg:px-8">
+                    <div class="bg-slate-800 shadow-sm sm:rounded-lg font-amiri lg:h-fit lg:pb-16 h-full" dir="rtl">
 
                         {{ $slot }}
 
