@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="p-6 h-screen">
+    <div class="p-6">
 
         <div class="flex justify-between w-full items-center ">
 
@@ -8,8 +8,6 @@
                 class="bg-white border-2 border-amber-400 rounded-full text-2xl font-semibold px-2 w-32 text-center"
                 dir="ltr">
             </div>
-
-            <x-application-logo />
 
         </div>
 

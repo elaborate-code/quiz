@@ -18,21 +18,32 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
-<body class="font-sans antialiased">
-    <div class="min-h-screen bg-slate-600">
-        <!-- Page Content -->
-        <main>
-            <div class="lg:py-6">
-                <div class="h-screen max-w-7xl mx-auto lg:px-8">
-                    <div class="bg-slate-800 shadow-sm sm:rounded-lg font-amiri lg:h-fit lg:pb-16 h-full" dir="rtl">
+<body class="antialiased h-screen bg-slate-600 font-amiri" dir="rtl">
 
-                        {{ $slot }}
+    <img class="w-24 sm:w-52 absolute right-0 top-0" src="https://media.giphy.com/media/TRub2cQyyLihIu0Ufa/giphy.gif" />
+    {{-- src="{{ asset('assets/lamps3.gif') }} --}}
 
-                    </div>
+    <!-- Page Content -->
+    <main class="grid h-full">
+
+        {{-- BOX --}}
+        <div class="place-self-center h-full w-full sm:w-[90vw] sm:h-[90vh] bg-slate-800 shadow-sm sm:rounded-lg p-8">
+
+            <div class="flex flex-col h-full">
+
+                <div class="flex justify-end">
+                    <x-application-logo />
+                </div>
+
+                <div class="overflow-y-auto flex-1">
+                    {{ $slot }}
                 </div>
             </div>
-        </main>
-    </div>
+
+        </div>
+
+    </main>
+
 </body>
 
 </html>
