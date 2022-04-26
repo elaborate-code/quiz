@@ -21,13 +21,14 @@
 <body class="antialiased h-screen bg-slate-600 font-amiri" dir="rtl">
 
     <img class="w-24 sm:w-52 absolute right-0 top-0" src="https://media.giphy.com/media/TRub2cQyyLihIu0Ufa/giphy.gif" />
-    {{-- src="{{ asset('assets/lamps3.gif') }} --}}
+    {{-- {{ asset('assets/lamps3.gif') }} --}}
 
     <!-- Page Content -->
     <main class="grid h-full">
 
         {{-- BOX --}}
-        <div class="place-self-center h-full w-full sm:w-[90vw] sm:h-[90vh] bg-slate-800 shadow-sm sm:rounded-lg p-8">
+        <div
+            class="place-self-center h-full w-full max-w-6xl sm:w-[90vw] sm:h-[90vh] bg-slate-800 shadow-sm sm:rounded-lg px-6 py-1 sm:p-8">
 
             <div class="flex flex-col h-full">
 

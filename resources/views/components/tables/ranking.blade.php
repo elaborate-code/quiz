@@ -2,7 +2,7 @@
 
 <div>
 
-    <div class="overflow-y-auto h-[70vh] min-h-[550px] max-h-[650px]">
+    <div class="overflow-y-auto h-[70vh] min-h-[450px] max-h-[550px]">
         <table class="text-white text-lg m-auto mt-5">
 
             <tr class="sticky top-0 bg-slate-800 border">
@@ -21,7 +21,7 @@
                                 continue;
                             @endphp
                         @elseif ($result->user_id === auth()->user()->id)
-                            <tr class="h-8"></tr>
+                            <tr class="h-6"></tr>
                         @endif
                     @endif
 
